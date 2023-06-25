@@ -7,7 +7,7 @@ local Plugin = {
             ["Description"] = "Launch a Yba:Nu script",
             ["Aliases"] = {"Nu","Stand","Stands Unleashed"},
             ["Function"] = function(args,speaker)
-              loadstring(game:HttpGet('https://github.com/BabarPhant/ScriptHubPhant/blob/main/Yba:Nu'))() 
+              loadstring(game:HttpGet('https://raw.githubusercontent.com/BabarPhant/ScriptHubPhant/main/Yba%3ANu?token=GHSAT0AAAAAACELBSR72J52D64XWKCLQRHGZEYNSIA'))() 
             end
         },
         ["Yba"] = {
