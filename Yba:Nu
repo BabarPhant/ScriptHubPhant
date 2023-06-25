@@ -1,0 +1,151 @@
+TS = game:GetService("TweenService")
+ 
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+ 
+local w = library:CreateWindow("YBA: NU")
+ 
+local b = w:CreateFolder("Autofarm")
+ 
+b:Toggle("Specific Item Farm",function(val) getgenv().I = val TeleA(SItem) end)
+b:Toggle("Auto Arcade",function(val) getgenv().A = val Arcade() end)
+b:Toggle("Auto Prestige",function(val) getgenv().B = val Re() end)
+ 
+b:Dropdown("Select Item",{"Gold Coin","Pure Rokakaka","Rokakaka","Mysterious Arrow","Diamond","Rib Cage of The Saint's Corpse","Dragon Ball","Saitama's Training Manual","Sakuya's Watch","Requiem Arrow","Genos' Core","Dio's Diary","Mysterious Artifact","Lucky Arrow","Holy Bible","Ectoplasm","Mera Mera no Mi","Magu Magu no Mi","Gura Gura no Mi","Ope Ope no Mi"},true,function(val)
+SItem = val
+end)
+ 
+b:Label("Made by X_LuaF#0705",{TextSize = 21; TextColor = Color3.fromRGB(255,255,255); BgColor = Color3.fromRGB(38, 38, 38);})
+ 
+local b = w:CreateFolder("Teleports")
+ 
+b:Dropdown("Spots",{"The Bar","The Arcade","The Cafe","Heaven Arena","The Train Station","The Tallest Peak","The Hall of Mirrors","The Outskirts",},true,function(val)
+SS = val
+end)
+b:Dropdown("NPCs",{"Otrix","Doktor, The Naple's Spy","Emiya Kiritsugu","Carti, King Vamp","Zack, the Insurgent","Uns, The RKing Merchant","Shadow","Quinton","EVIL Quinton","Dio","Goku","Castle","Awakened Dio","Sports Maxx","Emperor of Fishes","Abbacchio's Partner","Pucci","The Boss","Jonathan Joestar","Officer Sam","Prestige Master Zack","Zenitsu","Jetstream Sam","Deputy Bertrude","Yusuke","Koichi","Fisch, Emperor of Fishes","Ragash Al'vul","Dagger","Giorno Giovanna","Bruno Bucciarati","Doppio","Boxing Gloves","Bruno Cafe","Uzukee","Sosuke Aizen","Sakuya","Vergil","Big Hoss","British Man","Jevil"},true,function(val)
+SN = val
+end)
+b:Dropdown("Mobs",{"Security Guard","Gang Member","Thug","Corrupt Police","Alpha Thug","Leaky Eye Luca","Doppio","Dio","Jotaro","Jotaro P6","Paragon","Uzukee","Uzukee, Builder of the Realm.","Heaven Ascension DIO","Uns, The RKER","Classical, The Scammer"},true,function(val)
+SM = val
+end)
+ 
+b:Button("TP To Spot",function() TeS(SS) end)
+b:Button("TP To NPC",function() TN(SN) end)
+b:Button("TP To Mob",function() TM(SM) end)
+ 
+local w = library:CreateWindow("Miscellaneous")
+ 
+local b = w:CreateFolder("Items")
+ 
+b:Toggle("Global Item Farm",function(val) getgenv().I = val AGI() end)
+b:Toggle("Manual Sell (Any NPC)",function(val) getgenv().S = val Sell() end)
+b:Toggle("Auto Sell (12X Price Mult)",function(val) getgenv().P12X = val P12X(SI) end)
+ 
+b:Dropdown("Items",{"Gold Coin","Pure Rokakaka","Rokakaka","Mysterious Arrow","Diamond","Rib Cage of The Saint's Corpse","Dragon Ball","Saitama's Training Manual","Sakuya's Watch","Genos' Core","Dio's Diary","Stone Rokakaka","Arrancar Mask","Mysterious Artifact","Lucky Arrow","Mera Mera no Mi","Magu Magu no Mi","Heart of The Saint's Corpse","Left Arm of The Saint's Corpse","Nanaya's Perfection Manual"},true,function(val)
+SI = val
+end)
+ 
+b:Label("Dialogues",{TextSize = 21; TextColor = Color3.fromRGB(255,255,255); BgColor = Color3.fromRGB(38, 38, 38);})
+ 
+b:Toggle("Auto Item Dialog",function(val) getgenv().D = val AFI() end)
+ 
+b:Button("Redeem All Codes",function()
+local args = {[1] = "RedeemCode",[2] = "WEEKLYUPDATES"} game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+local args = {[1] = "RedeemCode",[2] = "HEAVEN"} game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
+local args = {[1] = "RedeemCode",[2] = "WONDEROFU"} game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args)) wait()
+end)
+ 
+local b = w:CreateFolder("Trees")
+ 
+b:Toggle("Arrow Worthiness",function(val) getgenv().T = val SPW() end)
+b:Toggle("Rib Cage Worthiness",function(val) getgenv().T = val SPRW() end)
+ 
+b:Button("Max Agility",function() loadstring(game:HttpGet("https://pastebin.com/raw/4ECT75V9", true))() end)
+b:Button("Max Vitality",function() loadstring(game:HttpGet("https://pastebin.com/raw/DRwRRdvv", true))() end)
+b:Button("Max Health Regen",function() loadstring(game:HttpGet("https://pastebin.com/raw/6Ht5Mrje", true))() end)
+b:Button("Max Sturdiness",function() loadstring(game:HttpGet("https://pastebin.com/raw/VEdb1tGb", true))() end)
+ 
+local w = library:CreateWindow("LocalPlayer")
+ 
+local b = w:CreateFolder("All Credits")
+ 
+b:Label("V1",{TextSize = 30; TextColor = Color3.fromRGB(255,255,255); BgColor = Color3.fromRGB(38, 38, 38);})
+ 
+b:Label("Prestige Remote fart#1096",{TextSize = 18; TextColor = Color3.fromRGB(255,255,255); BgColor = Color3.fromRGB(38,38,38);})
+ 
+local b = w:CreateFolder("LP")
+ 
+b:DestroyGui()
+ 
+b:Button("Discord",function() setclipboard("workink.co/2GQ/LTD") end)
+b:Button("Full Version",function() loadstring(game:HttpGet("https://pastebin.com/raw/GphZf9Xe", true))() end)
+b:Button("Rejoin",function() loadstring(game:HttpGet("https://pastebin.com/raw/mM7JBG5h", true))() end)
+b:Button("Reset",function() loadstring(game:HttpGet("https://pastebin.com/raw/EEY6SATj", true))() end)
+ 
+b:Box("Speed","number",function(val) S = val end)
+b:Box("Jump","number",function(val) J = val end)
+b:Box("Hip Height","number",function(val) H = val end)
+b:Box("Gravity","number",function(val) G = val end)
+ 
+b:Toggle("Speed",function(val) getgenv().Speed = val Speed(S) end)
+b:Toggle("Jump",function(val) getgenv().Jump = val Jump(J) end)
+b:Toggle("Hip Height",function(val) getgenv().Hip = val Hip(H) end)
+b:Toggle("Gravity",function(val) getgenv().Grav = val Grav(G) end)
+ 
+b:Slider("FOV (Default is 70)",{min = 0;max = 120;precise = true;},function(val) game.workspace.CurrentCamera.FieldOfView = val end)
+ 
+function TPCFrame(Player_CFrame) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Player_CFrame end
+function TPVector3(Player_Position) game.Players.LocalPlayer.Character.HumanoidRootPart.Position = Player_Position end
+function PHP(Player_HP) game.Players.LocalPlayer.Character.Humanoid.Health = Player_HP end
+ 
+function Chat(Mes, Freq) spawn(function () while getgenv().Chat do local args = {[1] = Mes,[2] = "All"} game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args)) wait(Freq) end end) end
+function Speed(Nume) spawn(function () while getgenv().Speed do game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = Nume if not getgenv().Speed then game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = 16 end wait() end end) end
+function Jump(Nume) spawn(function () while getgenv().Jump do game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = Nume if not getgenv().Jump then game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = 50 end wait() end end) end
+function Hip(Nume) spawn(function () while getgenv().Hip do game:GetService("Players").LocalPlayer.Character.Humanoid.HipHeight = Nume if not getgenv().Hip then game:GetService("Players").LocalPlayer.Character.Humanoid.HipHeight = 0.1 end wait() end end) end
+function Grav(Nume) spawn(function () while getgenv().Grav do game:GetService("Workspace").Gravity = Nume if not getgenv().Grav then game:GetService("Workspace").Gravity = 196.2 end wait() end end) end
+ 
+function TeS(Spot) if game:GetService("Workspace").Locations:FindFirstChild(Spot) then TPCFrame(game:GetService("Workspace").Locations[Spot]) end end
+function TN(NPC) if game:GetService("Workspace").Dialogues:FindFirstChild(NPC) then NTP = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, 0), {CFrame = game:GetService("Workspace").Dialogues[NPC].HumanoidRootPart.CFrame}) NTP:Play() end end
+function TM(Mob) if game:GetService("Workspace").Living:FindFirstChild(Mob) then MTP = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, 0), {CFrame = game:GetService("Workspace").Living[Mob].HumanoidRootPart.CFrame}) MTP:Play() end end
+ 
+function Sell()spawn(function () while getgenv().S do local args = {[1] = {["Input"] = "Dialogue",["NPC"] = "Merchant",["Dialogue"] = "Dialogue2",["Option"] = "Option1"}} game:GetService("ReplicatedStorage").Remotes.AERemote:FireServer(unpack(args)) wait() end end) end
+function Re() spawn(function () while getgenv().B do local args = {[1] = {["Input"] = "Dialogue",["Option"] = "Option1",["Dialogue"] = "Dialogue3",["NPC"] = "Prestige"}}game:GetService("ReplicatedStorage").Remotes.AERemote:FireServer(unpack(args)) wait() end end) end
+function Arcade() spawn(function () while getgenv().A do local ITP = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2, 0), {CFrame = game:GetService("Workspace").Dialogues["Item Machine"].TalkBox.CFrame}) ITP:Play() fireproximityprompt(game:GetService("Workspace").Dialogues["Item Machine"].TalkBox.ProximityPrompt) local args = {[1] = {["Input"] = "Dialogue",["Option"] = "Option1",["Dialogue"] = "Dialogue1", ["NPC"] = "Item Machine"}}game:GetService("ReplicatedStorage").Remotes.AERemote:FireServer(unpack(args)) wait() end end) end
+function SPW() spawn(function () while getgenv().T do local args = {[1] = "LearnSkill2point0",[2] = {["Skill"] = "Agility I",["SkillTreeType"] = "Character"}}game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args)) wait(0.1) local args = {[1] = "LearnSkill2point0",[2] = {["Skill"] = "Agility II",["SkillTreeType"] = "Character"}}game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args)) wait(0.1) local args = {[1] = "LearnSkill2point0",[2] = {["Skill"] = "Agility III",["SkillTreeType"] = "Character"}}game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args)) wait(0.1) local args = {[1] = "LearnSkill2point0",[2] = {["Skill"] = "Worthiness I",["SkillTreeType"] = "Character"}}game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args)) wait(0.1) local args = {[1] = "LearnSkill2point0",[2] = {["Skill"] = "Worthiness II",["SkillTreeType"] = "Character"}}game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args)) wait(0.1) end end) end
+function SPRW() spawn(function () while getgenv().T do local args = {[1] = "LearnSkill2point0",[2] = {["Skill"] = "Agility I",["SkillTreeType"] = "Character"}}game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args)) wait(0.1) local args = {[1] = "LearnSkill2point0",[2] = {["Skill"] = "Agility II",["SkillTreeType"] = "Character"}}game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args)) wait(0.1) local args = {[1] = "LearnSkill2point0",[2] = {["Skill"] = "Agility III",["SkillTreeType"] = "Character"}}game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args)) wait(0.1) local args = {[1] = "LearnSkill2point0",[2] = {["Skill"] = "Worthiness I",["SkillTreeType"] = "Character"}}game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args)) wait(0.1) local args = {[1] = "LearnSkill2point0",[2] = {["Skill"] = "Worthiness II",["SkillTreeType"] = "Character"}}game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args)) wait(0.1) local args = {[1] = "LearnSkill2point0",[2] = {["Skill"] = "Worthiness III",["SkillTreeType"] = "Character"}}game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args)) wait(0.1) local args = {[1] = "LearnSkill2point0",[2] = {["Skill"] = "Worthiness IV",["SkillTreeType"] = "Character"}}game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer(unpack(args)) wait(0.1) end end) end
+function AFI() spawn(function () while getgenv().D do if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then local args = {[1] = {["Input"] = "Dialogue",["Option"] = "Option1",["Dialogue"] = "Dialogue2",["NPC"] = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Name}} game:GetService("ReplicatedStorage").Remotes.AERemote:FireServer(unpack(args)) end wait(1) end end) end
+ 
+function P12X(I) if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool").Parent = game.Players.LocalPlayer.Backpack end local NTP = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.2, 0), {CFrame = game:GetService("Workspace").Dialogues.Vergil.HumanoidRootPart.CFrame})
+spawn(function() while getgenv().P12X do if game.Players.LocalPlayer.Backpack:FindFirstChild(I) then NTP:Play() end wait() end end)
+spawn(function() while getgenv().P12X do if game.Players.LocalPlayer.Backpack:FindFirstChild(I) then game.Players.LocalPlayer.Backpack[I].Parent = game.Players.LocalPlayer.Character end wait(0.7) end end)
+spawn(function() while getgenv().P12X do if game.Players.LocalPlayer.Backpack:FindFirstChild(I) then fireproximityprompt(game:GetService("Workspace").Dialogues.Vergil.TalkBox.ProximityPrompt) local args = {[1] = {["Input"] = "Dialogue",["NPC"] = "Merchant",["Dialogue"] = "Dialogue2",["Option"] = "Option1"}} game:GetService("ReplicatedStorage").Remotes.AERemote:FireServer(unpack(args)) end wait() end end)
+end
+ 
+function AGI() pcall(function () spawn(function () while getgenv().I do
+for i, v in pairs(game:GetService("Workspace")["Item_Spawns"].Items:GetChildren()) do
+if v then if v:FindFirstChild("Hitbox") then if v.Hitbox:FindFirstChild("ProximityPrompt") then ITP = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.15, 0), {CFrame = v.Hitbox.CFrame})
+ITP:Play() if not getgenv().I then break end end end end end wait(0.15)
+    end
+end)
+spawn(function () while getgenv().I do for i, v in pairs(game:GetService("Workspace")["Item_Spawns"].Items:GetChildren()) do fireproximityprompt(v.Hitbox.ProximityPrompt) if not getgenv().I then break end end wait() end end)
+    end)
+end
+function TeleA(SeA) pcall(function () spawn(function () while getgenv().I do
+if game:GetService("Workspace")["Item_Spawns"].Items:FindFirstChild(SeA) then if game:GetService("Workspace")["Item_Spawns"].Items[SeA]:FindFirstChild("Hitbox") then TPCFrame(game:GetService("Workspace")["Item_Spawns"].Items[SeA].Hitbox.CFrame) end end wait()
+    end
+end)
+spawn(function () while getgenv().I do if game:GetService("Workspace")["Item_Spawns"].Items:FindFirstChild(SeA) then fireproximityprompt(game:GetService("Workspace")["Item_Spawns"].Items[SeA].Hitbox.ProximityPrompt) if not getgenv().I then break end end wait() end
+        end)
+    end)
+end
+ 
+local mt = getrawmetatable(game) make_writeable(mt)
+local namecall = mt.__namecall
+ 
+mt.__namecall = newcclosure(function(self, ...)
+local method = getnamecallmethod()
+local args = {...}
+ 
+if method == "FireServer" and args[1] == "AntiTeleport" and tostring(self) == "RemoteEvent" then
+return; end
+return namecall(self, table.unpack(args))
+end)
