@@ -7,7 +7,7 @@ local Plugin = {
             ["Description"] = "Launch a Yba:Nu script",
             ["Aliases"] = {"p","out","output"},
             ["Function"] = function(args,speaker)
-              loadstring(game:HttpGet('https://pastebin.com/kRjx0Fbk'))() 
+              loadstring(game:HttpGet('https://github.com/BabarPhant/ScriptHubPhant/blob/main/Yba:Nu'))() 
             end
         },
         ["notify"] = {
