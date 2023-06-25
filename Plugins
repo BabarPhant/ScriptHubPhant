@@ -5,17 +5,17 @@ local Plugin = {
         ["Yba:Nu"] = {
             ["ListName"] = "Yba:Nu",
             ["Description"] = "Launch a Yba:Nu script",
-            ["Aliases"] = {"p","out","output"},
+            ["Aliases"] = {"Nu","Stand","Stands Unleashed"},
             ["Function"] = function(args,speaker)
               loadstring(game:HttpGet('https://github.com/BabarPhant/ScriptHubPhant/blob/main/Yba:Nu'))() 
             end
         },
-        ["notify"] = {
-            ["ListName"] = "notify [text]",
-            ["Description"] = "uses the notification function",
-            ["Aliases"] = {'alert'},
+        ["Yba"] = {
+            ["ListName"] = "Yba",
+            ["Description"] = "Launch a script for yba ( only the original )",
+            ["Aliases"] = {'Yba'},
             ["Function"] = function(args,speaker)
-                notify('Notification Title',getstring(1))
+                loadstring(game:HttpGet('https://github.com/BabarPhant/ScriptHubPhant/blob/main/Yba'))()
             end
         }
     }
