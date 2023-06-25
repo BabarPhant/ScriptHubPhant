@@ -15,7 +15,7 @@ local Plugin = {
             ["Description"] = "Launch a script for yba ( only the original )",
             ["Aliases"] = {'Yba'},
             ["Function"] = function(args,speaker)
-                loadstring(game:HttpGet('https://github.com/BabarPhant/ScriptHubPhant/blob/main/Yba'))()
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/BabarPhant/ScriptHubPhant/main/Yba?token=GHSAT0AAAAAACELBSR6EM5WEWNDHNDMFDMUZEYNRMQ'))()
             end
         }
     }
